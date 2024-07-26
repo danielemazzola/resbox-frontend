@@ -15,7 +15,7 @@
 }
 
 .partner-header:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .logo-absolute {
@@ -29,6 +29,16 @@
   height: 60px;
   display: flex;
   object-fit: cover;
+}
+
+.name-restaurant-span {
+  color: var(--rb-text-primary);
+  opacity: 0;
+  transition: opacity 0.9s;
+  font-size: var(--rb-font-size-small);
+}
+.partner-header:hover .name-restaurant-span {
+  opacity: 1;
 }
 
 .partner-avatar {

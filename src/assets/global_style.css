@@ -3,10 +3,10 @@
   --rb-bg-primary: #3e2723; /* Marrón oscuro */
   --rb-bg-secondary: #c75306; /* Marrón dulce */
   --rb-bg-tertiary: #d2b48c; /* Marrón claro */
+  --rb-bg-green: #0b660b; /* Green */
   --rb-bg-light: #f5f5dc; /* Beige */
   --rb-bg-cancel: #fa4c4c; /* Red */
   --rb-bg-register: #fc9723; /* Red */
-  --rb-bg-green: #0b660b; /* Green */
 
   --rb-text-primary: #ffffff; /* Blanco */
   --rb-text-secondary: #333333; /* Gris oscuro */
@@ -21,7 +21,7 @@
   --rb-border-width: 1px;
 
   /* Tipografía */
-  --rb-font-size-small: 0.875rem; /* 14px */
+  --rb-font-size-small: 0.85rem; /* 14px */
   --rb-font-size-medium: 1rem; /* 16px */
   --rb-font-size-large: 1.25rem; /* 20px */
   --rb-font-size-xlarge: 1.5rem; /* 24px */
@@ -88,6 +88,9 @@ button {
 .name-app {
   font-size: var(--rb-font-size-name-app);
   font-weight: bolder;
+}
+.description {
+  font-family: cursive;
 }
 .more-info {
   background-color: transparent;

@@ -18,6 +18,7 @@ const Partners = ({ partner }) => {
           alt={`${partner.restaurant_name} logo`}
           loading='lazy'
         />
+        <span className='name-restaurant-span'>{partner.restaurant_name}</span>
       </div>
 
       {/* Modal overlay with transition */}

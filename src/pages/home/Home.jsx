@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '/images/logo.png'
 import './Home.css'
-import Partners from '../../components/partners/Partners'
+import Partners from '../../components/partners_card/Partners'
 import { PartnersContext } from '../../context/PartnersContext'
 
 const Home = () => {
@@ -31,7 +31,9 @@ const Home = () => {
             <h1>
               <span className='name-app'>RES-BOX</span>
             </h1>
-            <p>&quot;Todas las ofertas en un único lugar&quot;</p>
+            <p className='description'>
+              &quot;Todas las ofertas en un único lugar&quot;
+            </p>
           </div>
           <div></div>
           <div className='contain-btn-action'>
