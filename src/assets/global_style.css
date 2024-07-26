@@ -1,7 +1,7 @@
 :root {
   /* Colores */
   --rb-bg-primary: #3e2723; /* Marrón oscuro */
-  --rb-bg-secondary: #a0522d; /* Marrón dulce */
+  --rb-bg-secondary: #c75306; /* Marrón dulce */
   --rb-bg-tertiary: #d2b48c; /* Marrón claro */
   --rb-bg-light: #f5f5dc; /* Beige */
   --rb-bg-cancel: #fa4c4c; /* Red */
@@ -24,6 +24,7 @@
   --rb-font-size-medium: 1rem; /* 16px */
   --rb-font-size-large: 1.25rem; /* 20px */
   --rb-font-size-xlarge: 1.5rem; /* 24px */
+  --rb-font-size-name-app: 3rem; /* 48px */
   --rb-line-height: 1.5;
 }
 * {
@@ -36,7 +37,7 @@ body {
   font-size: var(--rb-font-size-medium);
   line-height: var(--rb-line-height);
   color: var(--rb-text-secondary);
-  background-color: var(--rb-bg-light);
+  background-color: var(--rb-bg-primary);
 }
 h1 {
   font-size: var(--rb-font-size-xlarge);
@@ -61,23 +62,39 @@ a {
   text-decoration: none;
   color: var(--rb-text-primary);
 }
+button {
+  cursor: pointer;
+}
 .button {
   display: inline-block; /* Asegura que se comporte como un botón */
   padding: var(--rb-spacing-small) var(--rb-spacing-medium);
   border: none;
   border-radius: var(--rb-border-radius);
-  background-color: var(--rb-bg-secondary);
+  background-color: var(--rb-bg-secondary) !important;
   color: var(--rb-text-primary);
   font-size: var(--rb-font-size-medium);
-  cursor: pointer;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
 }
 .register {
-  background-color: var(--rb-bg-register);
+  background-color: var(--rb-bg-register) !important;
 }
 
 .button:hover {
+  transform: scale(0.9);
+}
+.name-app {
+  font-size: var(--rb-font-size-name-app);
+  font-weight: bolder;
+}
+.more-info {
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  color: var(--rb-bg-register);
+  transition: all 0.3s;
+}
+.more-info:hover {
   transform: scale(0.9);
 }

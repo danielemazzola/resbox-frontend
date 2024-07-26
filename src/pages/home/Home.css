@@ -2,9 +2,11 @@
   width: 100%;
 }
 .contain-hero {
+  background-color: var(--rb-bg-light);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100svh;
 }
 .contain-log,
 .contain-description {
@@ -27,6 +29,25 @@
 .contain-btn-action {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.container-partners {
+}
+.contain-partners-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--rb-spacing-large) 0;
+}
+.contain-partners-title > h2 {
+  text-align: center;
+  color: var(--rb-text-primary);
+}
+.container-cards-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

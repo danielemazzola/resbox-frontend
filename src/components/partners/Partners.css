@@ -1,0 +1,83 @@
+.partner-card {
+  margin: var(--rb-spacing-medium);
+  padding: var(--rb-spacing-medium);
+  text-align: center;
+  width: 190px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--rb-bg-tertiary);
+  border-radius: 5px;
+}
+
+.partner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partner-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: var(--rb-spacing-small);
+}
+
+.partner-name {
+  font-size: var(--rb-font-size-large);
+  color: var(--rb-text-primary);
+  margin: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 25, 0, 0.726);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background: var(--rb-text-primary);
+  border-radius: var(--rb-border-radius);
+  padding: 0 0 var(--rb-spacing-medium) 0;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--rb-spacing-small);
+  right: var(--rb-spacing-small);
+  border: none;
+  font-size: var(--rb-font-size-large);
+  color: var(--rb-text-primary);
+  cursor: pointer;
+  background-color: var(--rb-bg-cancel);
+  border-radius: 50%;
+  padding: 3px 7px;
+}
+
+.modal-banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: var(--rb-spacing-medium);
+}
+
+.modal-details p {
+  margin: var(--rb-spacing-small) 0;
+  color: var(--rb-text-secondary);
+  display: flex;
+  padding: 0 10px;
+}
