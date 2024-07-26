@@ -16,10 +16,9 @@ const Home = () => {
     const fetchPartners = async () => {
       await getAllRestaurants()
     }
-    fetchPartners()
-  }, [getAllRestaurants])
-
-  console.log(partners)
+    if (partners.length > 0) return
+    else fetchPartners()
+  }, [getAllRestaurants, partners])
 
   return (
     <section className='container-hero'>
@@ -34,7 +33,7 @@ const Home = () => {
             </h1>
           </div>
           <div>
-            <p>Todas las ofertas en un unico lugar.</p>
+            <p>&quot;Todas las ofertas en un único lugar&quot;</p>
           </div>
           <div className='contain-btn-action'>
             <button className='button'>

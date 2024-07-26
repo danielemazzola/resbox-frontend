@@ -71,7 +71,7 @@ button {
   border: none;
   border-radius: var(--rb-border-radius);
   background-color: var(--rb-bg-secondary) !important;
-  color: var(--rb-text-primary);
+  color: var(--rb-text-primary) !important;
   font-size: var(--rb-font-size-medium);
   text-align: center;
   text-decoration: none;
@@ -92,7 +92,7 @@ button {
   background-color: transparent;
   border: none;
   text-align: end;
-  color: var(--rb-bg-register);
+  color: var(--rb-bg-cancel);
   transition: all 0.3s;
 }
 .more-info:hover {

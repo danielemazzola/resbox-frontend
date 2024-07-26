@@ -1,20 +1,34 @@
 .partner-card {
-  margin: var(--rb-spacing-medium);
-  padding: var(--rb-spacing-medium);
+  margin: var(--rb-spacing-small);
+  padding: var(--rb-spacing-small);
   text-align: center;
-  width: 190px;
-  height: 220px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  border: 1px solid var(--rb-bg-tertiary);
-  border-radius: 5px;
 }
 
 .partner-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.partner-header:hover {
+  transform: scale(1.1);
+}
+
+.logo-absolute {
+  position: absolute;
+  top: var(--rb-spacing-small);
+  left: var(--rb-spacing-small);
+}
+
+.logo-absolute > img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  object-fit: cover;
 }
 
 .partner-avatar {
@@ -22,6 +36,7 @@
   height: 100px;
   object-fit: cover;
   margin-bottom: var(--rb-spacing-small);
+  border-radius: 100%;
 }
 
 .partner-name {
@@ -36,12 +51,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(51, 25, 0, 0.726);
+  background: rgba(51, 25, 0, 0.884);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay.closed {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal-content {
@@ -53,6 +80,12 @@
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  transform: translateY(-30px);
+  transition: transform 0.5s ease;
+}
+
+.modal-overlay.open .modal-content {
+  transform: translateY(0);
 }
 
 .modal-close {
@@ -78,6 +111,7 @@
 .modal-details p {
   margin: var(--rb-spacing-small) 0;
   color: var(--rb-text-secondary);
+  padding: 0 5px;
   display: flex;
-  padding: 0 10px;
+  gap: 5px;
 }

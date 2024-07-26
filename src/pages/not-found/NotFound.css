@@ -11,6 +11,7 @@
   font-weight: bold;
   padding: 5px;
   border-radius: 5px;
+  color: var(--rb-text-primary);
 }
 .turn {
   display: flex;
