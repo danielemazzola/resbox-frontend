@@ -1,0 +1,83 @@
+:root {
+  /* Colores */
+  --rb-bg-primary: #3e2723; /* Marrón oscuro */
+  --rb-bg-secondary: #a0522d; /* Marrón dulce */
+  --rb-bg-tertiary: #d2b48c; /* Marrón claro */
+  --rb-bg-light: #f5f5dc; /* Beige */
+  --rb-bg-cancel: #fa4c4c; /* Red */
+  --rb-bg-register: #fc9723; /* Red */
+
+  --rb-text-primary: #ffffff; /* Blanco */
+  --rb-text-secondary: #333333; /* Gris oscuro */
+  --rb-text-tertiary: #000000; /* Negro */
+
+  /* Medidas */
+  --rb-spacing-small: 0.5rem; /* 8px */
+  --rb-spacing-medium: 1rem; /* 16px */
+  --rb-spacing-large: 2rem; /* 32px */
+
+  --rb-border-radius: 0.25rem; /* 4px */
+  --rb-border-width: 1px;
+
+  /* Tipografía */
+  --rb-font-size-small: 0.875rem; /* 14px */
+  --rb-font-size-medium: 1rem; /* 16px */
+  --rb-font-size-large: 1.25rem; /* 20px */
+  --rb-font-size-xlarge: 1.5rem; /* 24px */
+  --rb-line-height: 1.5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--rb-font-size-medium);
+  line-height: var(--rb-line-height);
+  color: var(--rb-text-secondary);
+  background-color: var(--rb-bg-light);
+}
+h1 {
+  font-size: var(--rb-font-size-xlarge);
+  margin-bottom: var(--rb-spacing-medium);
+}
+
+h2 {
+  font-size: var(--rb-font-size-large);
+  margin-bottom: var(--rb-spacing-medium);
+}
+
+p {
+  margin-bottom: var(--rb-spacing-medium);
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--rb-text-primary);
+}
+.button {
+  display: inline-block; /* Asegura que se comporte como un botón */
+  padding: var(--rb-spacing-small) var(--rb-spacing-medium);
+  border: none;
+  border-radius: var(--rb-border-radius);
+  background-color: var(--rb-bg-secondary);
+  color: var(--rb-text-primary);
+  font-size: var(--rb-font-size-medium);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.register {
+  background-color: var(--rb-bg-register);
+}
+
+.button:hover {
+  transform: scale(0.9);
+}

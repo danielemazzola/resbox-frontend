@@ -1,0 +1,29 @@
+.not-found {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.not-found > p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.turn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.turn > a {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: var(--ufigi-tertiary-color);
+  color: var(--ufigi-light-color);
+  transition: all 0.3s;
+}
+.turn > a:hover {
+  transform: scale(1.1);
+}
