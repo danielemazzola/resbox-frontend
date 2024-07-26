@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 import './Partners.css'
-import { useState } from 'react'
+import Modal from '../modal/Modal'
 
 const Partners = ({ partner }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -21,12 +22,8 @@ const Partners = ({ partner }) => {
         <span className='name-restaurant-span'>{partner.restaurant_name}</span>
       </div>
 
-      {/* Modal overlay with transition */}
-      <div className={`modal-overlay ${isModalOpen ? 'open' : 'closed'}`}>
+      <Modal isModalOpen={isModalOpen} handleCloseModal={handleCloseModal}>
         <div className='modal-content'>
-          <button className='modal-close' onClick={handleCloseModal}>
-            ✕
-          </button>
           <img
             className='modal-banner'
             src={partner.banner}
@@ -59,7 +56,7 @@ const Partners = ({ partner }) => {
             </p>
           </div>
         </div>
-      </div>
+      </Modal>
     </div>
   )
 }

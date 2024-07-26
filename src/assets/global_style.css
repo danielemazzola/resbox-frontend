@@ -105,3 +105,23 @@ button {
 .green {
   background-color: var(--rb-bg-green) !important;
 }
+
+.fade-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Aplica la transición de visibilidad */
+.fade-in {
+  opacity: 1;
+}
+
+/* Aplica la transición de invisibilidad (opcional) */
+.fade-out {
+  opacity: 0;
+}
+
+/* Oculta el elemento completamente (opcional) */
+.hidden {
+  display: none;
+}
