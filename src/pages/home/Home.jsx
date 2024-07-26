@@ -27,14 +27,13 @@ const Home = () => {
           <img alt='logo Res-Box' src={logo} />
         </div>
         <div className='contain-description'>
-          <div>
+          <div className='contain-title-app'>
             <h1>
               <span className='name-app'>RES-BOX</span>
             </h1>
-          </div>
-          <div>
             <p>&quot;Todas las ofertas en un único lugar&quot;</p>
           </div>
+          <div></div>
           <div className='contain-btn-action'>
             <button className='button'>
               <Link to='./login'>Get Started</Link>
@@ -42,6 +41,9 @@ const Home = () => {
             <Link to='./register' className='button register'>
               Register
             </Link>
+            <a href='#partners' className='button green'>
+              Partners
+            </a>
           </div>
         </div>
       </div>
@@ -52,7 +54,7 @@ const Home = () => {
           d='M0,224L80,234.7C160,245,320,267,480,250.7C640,235,800,181,960,154.7C1120,128,1280,128,1360,128L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'
         ></path>
       </svg>
-      <div className='container-partners'>
+      <div id='partners' className='container-partners'>
         <div className='contain-partners-title'>
           <h2>
             Donde puedes consumir tus <br></br>

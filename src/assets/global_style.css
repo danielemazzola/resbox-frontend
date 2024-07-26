@@ -6,6 +6,7 @@
   --rb-bg-light: #f5f5dc; /* Beige */
   --rb-bg-cancel: #fa4c4c; /* Red */
   --rb-bg-register: #fc9723; /* Red */
+  --rb-bg-green: #0b660b; /* Green */
 
   --rb-text-primary: #ffffff; /* Blanco */
   --rb-text-secondary: #333333; /* Gris oscuro */
@@ -27,6 +28,9 @@
   --rb-font-size-name-app: 3rem; /* 48px */
   --rb-line-height: 1.5;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -41,16 +45,13 @@ body {
 }
 h1 {
   font-size: var(--rb-font-size-xlarge);
-  margin-bottom: var(--rb-spacing-medium);
 }
 
 h2 {
   font-size: var(--rb-font-size-large);
-  margin-bottom: var(--rb-spacing-medium);
 }
 
 p {
-  margin-bottom: var(--rb-spacing-medium);
 }
 ul,
 li {
@@ -97,4 +98,7 @@ button {
 }
 .more-info:hover {
   transform: scale(0.9);
+}
+.green {
+  background-color: var(--rb-bg-green) !important;
 }
