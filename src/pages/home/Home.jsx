@@ -1,9 +1,10 @@
 import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '/images/logo.png'
-import './Home.css'
-import Partners from '../../components/partners_card/Partners'
 import { PartnersContext } from '../../context/PartnersContext'
+import Partners from '../../components/partners_card/Partners'
+import logo from '/images/logo.png'
+import { home_works, btn_home } from './helpers'
+import './Home.css'
 
 const Home = () => {
   const {
@@ -20,6 +21,8 @@ const Home = () => {
     else fetchPartners()
   }, [getAllRestaurants, partners])
 
+  console.log(home_works)
+
   return (
     <section className='container-hero'>
       <div className='contain-hero'>
@@ -29,22 +32,20 @@ const Home = () => {
         <div className='contain-description'>
           <div className='contain-title-app'>
             <h1>
-              <span className='name-app'>RES-BOX</span>
+              <span className='name-app'>{home_works.title}</span>
             </h1>
-            <p className='description'>
-              &quot;Todas las ofertas en un único lugar&quot;
-            </p>
+            <p className='description'>&quot;{home_works.subtitle}&quot;</p>
           </div>
           <div></div>
           <div className='contain-btn-action'>
-            <button className='button'>
-              <Link to='./login'>Get Started</Link>
-            </button>
+            <Link to='./login'>
+              <button className='button'>{btn_home.btn_get_started}</button>
+            </Link>
             <Link to='./register' className='button register'>
-              Register
+              {btn_home.btn_register}
             </Link>
             <a href='#partners' className='button green'>
-              Partners
+              {btn_home.btn_partners}
             </a>
           </div>
         </div>

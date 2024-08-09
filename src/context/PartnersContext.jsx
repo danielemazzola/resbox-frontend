@@ -16,7 +16,7 @@ export const PartnersProvider = ({ children }) => {
     try {
       dispatch_load({ type: 'SET_LOAD_TRUE' })
       const response = await fetch(
-        'http://192.168.100.135:4000/api/v1/user/restaurants'
+        `${import.meta.env.VITE_URL_API}/v1/user/restaurants`
       )
       const data = await response.json()
       dispatch_partners({ type: 'SET_PARTNERS', payload: data.restaurants })
