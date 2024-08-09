@@ -7,7 +7,7 @@ const HowDoesItWork = ({ home_works }) => {
   return (
     <div className='container-how-work'>
       <div className='contain-log-work'>
-        <div>
+        <div className='contain-log-img-work'>
           <img alt='image coffe banner' src={coffe} />
         </div>
         <div className='contain-description-work'>
@@ -23,7 +23,7 @@ const HowDoesItWork = ({ home_works }) => {
         </div>
       </div>
       <div className='contain-log-work'>
-        <div>
+        <div className='contain-log-img-work'>
           <img alt='image coffe banner' src={box} />
         </div>
         <div className='contain-description-work'>
@@ -35,11 +35,10 @@ const HowDoesItWork = ({ home_works }) => {
             </h2>
             <p className=''>&quot;{home_works.how_work_subtitle_2}&quot;</p>
           </div>
-          <div></div>
         </div>
       </div>
       <div className='contain-log-work'>
-        <div>
+        <div className='contain-log-img-work'>
           <img alt='image coffe banner' src={tazaCafe} />
         </div>
         <div className='contain-description-work'>

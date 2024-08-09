@@ -28,9 +28,11 @@
 .contain-description-work > div > p {
   text-align: center;
 }
-.contain-log-work > div > img {
+.contain-log-img-work {
   display: flex;
   object-fit: cover;
+}
+.contain-log-img-work > img {
   width: 250px;
 }
 @media (max-width: 840px) {
@@ -47,14 +49,20 @@
   .container-how-work {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
-  .contain-log,
-  .contain-description {
+
+  .contain-description-work {
     width: 100%;
     height: auto;
   }
-  .contain-log-work > img {
-    width: 90%;
+
+  .contain-log-img-work {
+    justify-content: center;
+  }
+
+  .contain-log-img-work > img {
+    width: 70%;
     object-fit: contain;
   }
 }

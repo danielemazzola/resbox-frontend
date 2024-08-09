@@ -98,13 +98,27 @@ const Home = () => {
                 <span className='name-app'>{home_works.title_2_span}</span>
               </h2>
             </div>
+            <div className='container-country-partners'>
+              <h3>Estamos en:</h3>
+              <ul>
+                {partners
+                  .map((el) => el.country)
+                  .filter((value, index, self) => self.indexOf(value) === index)
+                  .map((country, index) => (
+                    <li key={index}>{country}</li>
+                  ))}
+              </ul>
+            </div>
             {partners && partners.length > 0 ? (
               <div className='container-cards-partners'>
-                {partners.map((partner) => (
-                  <div key={partner._id}>
-                    <Partners partner={partner} />
-                  </div>
-                ))}
+                {partners
+                  .map((partner) => (
+                    <div key={partner._id}>
+                      <Partners partner={partner} />
+                    </div>
+                  ))
+                  .slice(0, 10)
+                  .reverse()}
               </div>
             ) : (
               <p>{home_works.paragraph_not_partner}</p>
@@ -118,6 +132,11 @@ const Home = () => {
             ></path>
           </svg>
           <div ref={refFunctionAppSection} className='contain-function'>
+            <div>
+              <h2>
+                <span className='name-app'>¿Como funciona?</span>
+              </h2>
+            </div>
             <HowDoesItWork home_works={home_works} />
           </div>
         </section>

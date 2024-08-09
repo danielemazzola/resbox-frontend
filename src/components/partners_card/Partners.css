@@ -11,18 +11,17 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+}
+
+.partner-header > img {
   transition: all 0.3s;
   overflow: hidden;
 }
 
-.partner-header:hover {
-  transform: scale(1.2);
+.partner-header:hover img:hover {
+  transform: scale(1.1);
 }
 
-.partner-header:hover .imagen {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
 .logo-absolute {
   position: absolute;
   top: var(--rb-spacing-small);
