@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import './Partners.css'
 import Modal from '../modal/Modal'
+import MapView from '../mapView/MapView'
 
 const Partners = ({ partner }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -19,7 +20,9 @@ const Partners = ({ partner }) => {
           alt={`${partner.restaurant_name} logo`}
           loading='lazy'
         />
-        <span className='name-restaurant-span'>{partner.restaurant_name}</span>
+        <span className='name-restaurant-span cursive'>
+          {partner.restaurant_name}
+        </span>
       </div>
 
       <Modal isModalOpen={isModalOpen} handleCloseModal={handleCloseModal}>
@@ -37,23 +40,18 @@ const Partners = ({ partner }) => {
               loading='lazy'
             />
           </div>
-          <div className='modal-details'>
+          <div className='modal-details cursive'>
             <p>
-              <strong>Nombre:</strong> {partner.restaurant_name}
+              {' '}
+              {partner.restaurant_name} | tel: {partner.phone}
             </p>
-            <p>
-              <strong>Dirección:</strong> {partner.offices_address}
-            </p>
-            <p>
-              <strong>Ciudad:</strong> {partner.country}
-            </p>
-            <p>
-              <strong>Telefono:</strong> {partner.phone}
-            </p>
-            <p>
-              <strong>Rating:</strong> {partner.rating} ({partner.ratingCount}{' '}
-              reviews)
-            </p>
+            <p>{partner.offices_address}</p>
+            <p>{partner.country}</p>
+            <div className='container-map-view'>
+              <div>
+                <MapView partner={partner} />
+              </div>
+            </div>
           </div>
         </div>
       </Modal>

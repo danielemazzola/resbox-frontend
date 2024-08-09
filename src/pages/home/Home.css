@@ -52,6 +52,9 @@
   text-align: center;
   color: var(--rb-text-primary);
 }
+.contain-partners-title > h2 > span {
+  text-transform: uppercase;
+}
 .container-cards-partners {
   display: flex;
   justify-content: center;

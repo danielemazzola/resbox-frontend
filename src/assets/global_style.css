@@ -1,6 +1,7 @@
 :root {
   /* Colores */
   --rb-bg-primary: #3e2723; /* Marrón oscuro */
+  --rb-bg-primary-transparent: #3e272381; /* Marrón oscuro */
   --rb-bg-secondary: #c75306; /* Marrón dulce */
   --rb-bg-tertiary: #d2b48c; /* Marrón claro */
   --rb-bg-green: #0b660b; /* Green */
@@ -76,6 +77,7 @@ button {
   font-size: var(--rb-font-size-medium);
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: all 0.3s;
 }
 .register {
@@ -88,9 +90,13 @@ button {
 .name-app {
   font-size: var(--rb-font-size-name-app);
   font-weight: bolder;
+  text-transform: capitalize;
 }
-.description {
+.cursive {
   font-family: cursive;
+}
+.cursive-none {
+  font-family: Arial, sans-serif;
 }
 .more-info {
   background-color: transparent;

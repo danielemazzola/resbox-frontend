@@ -94,13 +94,19 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  margin-bottom: var(--rb-spacing-medium);
 }
 
-.modal-details p {
-  margin: var(--rb-spacing-small) 0;
+.modal-details {
   color: var(--rb-text-secondary);
-  padding: 0 5px;
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+}
+.container-map-view {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-map-view > div {
+  width: 80%;
 }

@@ -23,7 +23,9 @@ export const PartnersProvider = ({ children }) => {
     } catch (error) {
       console.log(error)
     } finally {
-      dispatch_load({ type: 'SET_LOAD_FALSE' })
+      setTimeout(() => {
+        dispatch_load({ type: 'SET_LOAD_FALSE' })
+      }, 2000)
     }
   }, [])
 
