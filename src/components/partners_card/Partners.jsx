@@ -20,9 +20,7 @@ const Partners = ({ partner }) => {
           alt={`${partner.restaurant_name} logo`}
           loading='lazy'
         />
-        <span className='name-restaurant-span cursive'>
-          {partner.restaurant_name}
-        </span>
+        <span className='name-restaurant-span'>{partner.restaurant_name}</span>
       </div>
 
       <Modal isModalOpen={isModalOpen} handleCloseModal={handleCloseModal}>
@@ -40,7 +38,7 @@ const Partners = ({ partner }) => {
               loading='lazy'
             />
           </div>
-          <div className='modal-details cursive'>
+          <div className='modal-details'>
             <p>
               {' '}
               {partner.restaurant_name} | tel: {partner.phone}

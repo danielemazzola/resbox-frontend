@@ -38,7 +38,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace;
   font-size: var(--rb-font-size-medium);
   line-height: var(--rb-line-height);
   color: var(--rb-text-secondary);
@@ -53,16 +53,19 @@ h2 {
 }
 
 p {
+  font-size: var(--rb-font-size-medium);
 }
 ul,
 li {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: var(--rb-font-size-medium);
 }
 a {
   text-decoration: none;
   color: var(--rb-text-primary);
+  font-size: var(--rb-font-size-medium);
 }
 button {
   cursor: pointer;
@@ -74,7 +77,6 @@ button {
   border-radius: var(--rb-border-radius);
   background-color: var(--rb-bg-secondary) !important;
   color: var(--rb-text-primary) !important;
-  font-size: var(--rb-font-size-medium);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -91,12 +93,6 @@ button {
   font-size: var(--rb-font-size-name-app);
   font-weight: bolder;
   text-transform: capitalize;
-}
-.cursive {
-  font-family: cursive;
-}
-.cursive-none {
-  font-family: Arial, sans-serif;
 }
 .more-info {
   background-color: transparent;
